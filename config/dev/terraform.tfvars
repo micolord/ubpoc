@@ -1,5 +1,5 @@
 region  = "ap-northeast-1"
-project = "gpoc"
+project = "ubpoc"
 env_name = "dev"
 
 // network details
