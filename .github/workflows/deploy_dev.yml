@@ -134,13 +134,14 @@ jobs:
         id: init
         run: terraform -chdir=terraform/alicloud init
         env:
-          ALICLOUD_ACCESS_KEY:  ${{ secrets.ALICLOUD_ACCESS_KEY }}
-          ALICLOUD_SECRET_KEY:  ${{ secrets.ALICLOUD_SECRET_KEY }}
+          ALICLOUD_ACCESS_KEY:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+          ALICLOUD_SECRET_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Terraform Apply
         id: apply
         run: terraform -chdir=terraform/alicloud apply --auto-approve dev-plan.out
         env:
-          ALICLOUD_ACCESS_KEY:  ${{ secrets.ALICLOUD_ACCESS_KEY }}
-          ALICLOUD_SECRET_KEY:  ${{ secrets.ALICLOUD_SECRET_KEY }}
+          ALICLOUD_ACCESS_KEY:  ${{ secrets.AWS_ACCESS_KEY_ID }}
+          ALICLOUD_SECRET_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
       
