@@ -1,5 +1,6 @@
 module "GO_sg" {
   source = "terraform-aws-modules/security-group/aws//modules/http-80"
+  version = "5.3.1"
 
   name        = "${var.env_name}-${var.project}-GO-sg"
   description = "Security group for web-server with HTTP ports open within VPC"

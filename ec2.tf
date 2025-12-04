@@ -1,6 +1,6 @@
 module "ec2_instance" {
   source  = "terraform-aws-modules/ec2-instance/aws"
-  version = "1.5.7"
+  version = "6.1.5"
 
   name = "${var.env_name}-${var.project}-GO"
 
