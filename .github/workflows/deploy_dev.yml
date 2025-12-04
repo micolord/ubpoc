@@ -46,7 +46,7 @@ jobs:
         run: ls -l
 
       - name: Install Terraform
-        uses: hashicorp/setup-terraform@v3
+        uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.5.7
 
