@@ -118,7 +118,10 @@ jobs:
           find: "dynamic_env"
           replace: "dev"
           regex: false
-          include: "backend.tf"    
+          include: "backend.tf"
+          
+      - name: terraform version
+        run: terraform --version
 
       - name: Terraform Init
         id: init
