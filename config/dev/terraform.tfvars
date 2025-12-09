@@ -2,7 +2,7 @@ region  = "ap-northeast-1"
 project = "ubpoc"
 env_name = "dev"
 
-// network details
+// network detail
 vpc_cidr = "10.0.0.0/16"
 vpc_id = "vpc-0c8aad312bf486738"
 #public_subnet_cidr_1 = "10.0.101.0/24"
