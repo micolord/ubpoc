@@ -17,6 +17,6 @@ jobs:
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-                    cd /home/deploy/git/gpoc/
+                    cd /home/deploy/git/ubpoc/
                     git pull origin dev
                     cp -R app/* /var/www/html/wp-content/themes/twentytwentythree/

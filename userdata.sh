@@ -54,8 +54,8 @@ cp -r wordpress/* /var/www/html/
 
 mkdir git
 cd git
-git clone https://github.com/micolord/gpoc.git
-cd gpoc
+git clone https://github.com/micolord/ubpoc.git
+cd ubpoc
 git config --global user.email "53897214+micolord@users.noreply.github.com"
 git config --global user.name "micolord"
 git checkout -b dev
